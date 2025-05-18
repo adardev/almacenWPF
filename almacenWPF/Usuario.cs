@@ -7,21 +7,21 @@ namespace almacenWPF.Models
     public class Usuario : BaseModel
     {
         [PrimaryKey("id_user", false)]
-        public int Id { get; set; }
+        public long IdUser { get; set; }
 
         [Column("nombre")]
         public string Nombre { get; set; }
 
-        [Column("password")]
-        public string Password { get; set; }
-
         [Column("apellidos")]
         public string Apellidos { get; set; }
 
+        [Column("password")]
+        public string Password { get; set; }
+
         [Column("fecha_nac")]
-        public DateTime FechaNac { get; set; }
+        public string FechaNacimiento { get; set; } // Mejor usar DateTime si el campo es tipo fecha en la BD
 
         [Column("tipo")]
-        public string Tipo { get; set; }
+        public string Tipo { get; set; } // "admin", "usuario", etc.
     }
 }

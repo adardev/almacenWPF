@@ -7,6 +7,10 @@
         mc:Ignorable="d"
         Title="Window1" Height="450" Width="800">
     <Grid>
-        
+        <TextBox HorizontalAlignment="Left" Margin="71,49,0,0" FontSize="20" TextWrapping="Wrap" Text="Nomina" VerticalAlignment="Top" Width="81" TextChanged="TextBox_TextChanged" Height="32"/>
+        <TextBox HorizontalAlignment="Left" Margin="166,49,0,0" FontSize="20" TextWrapping="Wrap" Text="Nomina" VerticalAlignment="Top" Width="82" TextChanged="TextBox_TextChanged" Height="32"/>
+        <Button Click="materialbtn" Content="Material" HorizontalAlignment="Left" Margin="71,113,0,0" VerticalAlignment="Top"/>
+        <Button Click="ordenbtn" Content="Orden" HorizontalAlignment="Left" Margin="71,150,0,0" VerticalAlignment="Top"/>
+        <Button Click="foliobtn" Content="Folio" HorizontalAlignment="Left" Margin="71,189,0,0" VerticalAlignment="Top"/>
     </Grid>
 </Window>
